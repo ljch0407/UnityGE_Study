@@ -42,4 +42,9 @@ public class TU_Study : MonoBehaviour
     {
         print("컴포넌트가 주기적으로 업데이트 되었습니다.");
     }
+
+    private void LateUpdate()
+    {
+        print("업데이트 이후에 실행됩니다.")
+    }
 }
