@@ -17,6 +17,7 @@ public class TU_Study : MonoBehaviour
     public complexType type; 
     void Start()
     {
+        print("게임이 시작 되었습니다");
     }
 
     // Update is called once per frame
