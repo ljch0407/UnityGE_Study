@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
@@ -21,6 +22,17 @@ public class TU_Study : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    void OnEnable()
+    {
+        print("컴포넌트가 활성화 되었습니다");
+    }
+
+    private void OnDisable()
+    {
+        print("컴포넌트가 비활성화 되었습니다");
+    }
+
     void Update()
     {
        
