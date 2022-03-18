@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class Monster : MonoBehaviour//추상 클래스
 {
-    protected abstract void WarCry();
+    public abstract void WarCry();
 
     private void Start()
     {
