@@ -37,4 +37,9 @@ public class TU_Study : MonoBehaviour
     {
        print("컴포넌트가 업데이트 되었습니다.");
     }
+
+    private void FixedUpdate()
+    {
+        print("컴포넌트가 주기적으로 업데이트 되었습니다.");
+    }
 }
