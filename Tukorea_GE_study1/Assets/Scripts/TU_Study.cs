@@ -8,20 +8,14 @@ using UnityEngine;
 
 public class TU_Study : MonoBehaviour
 {
-    //타이머 방식을 이용해보자
-    private const float AttackInterval = 3.0f;
-    private float m_attackIntervalTimer;
-    private void Update()
-    {
-        m_attackIntervalTimer += Time.deltaTime;
-        if (m_attackIntervalTimer > 3.0f)
-            PrintText();
+   //Invoke 를 이용해 보자
+   private void Start()
+   {
+      Invoke("PrintText",3.0f);
+   }
 
-        m_attackIntervalTimer = 0.0f;
-    }
-
-    void PrintText()
-    {
-        print("공격함!");
-    }
+   void PrintText()
+   {
+      print("공격함!");
+   }
 }
