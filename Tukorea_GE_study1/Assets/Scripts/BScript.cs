@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class BScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void SayHello()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        print("안녕하시오");
     }
 }

@@ -11,8 +11,12 @@ public class AScript : MonoBehaviour
    private void Start()
    {
       ObjectB = new GameObject("B");
+      ObjectB.AddComponent<BScript>();
       print(ObjectB.name);
-      
-      Destroy(ObjectB);
+
+      var B = ObjectB.GetComponent<BScript>();
+      B.SendMessage("SayHello");
    }
+   
+   
 }
