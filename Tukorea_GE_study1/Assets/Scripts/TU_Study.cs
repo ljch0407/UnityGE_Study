@@ -35,6 +35,6 @@ public class TU_Study : MonoBehaviour
 
     void Update()
     {
-       
+       print("컴포넌트가 업데이트 되었습니다.");
     }
 }
