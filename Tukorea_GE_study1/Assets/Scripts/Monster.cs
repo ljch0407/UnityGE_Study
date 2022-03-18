@@ -5,8 +5,15 @@ using UnityEngine;
 
 public abstract class Monster : MonoBehaviour//추상 클래스
 {
+    protected abstract void WarCry();
+
     private void Start()
     {
-        print("크와와왕!");
+        WarCry();
+    }
+
+    private void Update()
+    {
+        
     }
 }
