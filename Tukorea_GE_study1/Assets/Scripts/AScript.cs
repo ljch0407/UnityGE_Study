@@ -13,9 +13,9 @@ public class AScript : MonoBehaviour
       ObjectB = new GameObject("B");
       ObjectB.AddComponent<BScript>();
       print(ObjectB.name);
+      
+      ObjectB.SendMessage("SayHello");
 
-      var B = ObjectB.GetComponent<BScript>();
-      B.SendMessage("SayHello");
    }
    
    
