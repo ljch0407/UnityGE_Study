@@ -4,47 +4,24 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-[Serializable]
-public class complexType
-{
-    public string name;
-    public int age;
-    public float hieght;
-}
+
 
 public class TU_Study : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public complexType type; 
-    void Start()
+    //타이머 방식을 이용해보자
+    private const float AttackInterval = 3.0f;
+    private float m_attackIntervalTimer;
+    private void Update()
     {
-        print("게임이 시작 되었습니다");
+        m_attackIntervalTimer += Time.deltaTime;
+        if (m_attackIntervalTimer > 3.0f)
+            PrintText();
+
+        m_attackIntervalTimer = 0.0f;
     }
 
-    // Update is called once per frame
-
-    void OnEnable()
+    void PrintText()
     {
-        print("컴포넌트가 활성화 되었습니다");
-    }
-
-    private void OnDisable()
-    {
-        print("컴포넌트가 비활성화 되었습니다");
-    }
-
-    void Update()
-    {
-       print("컴포넌트가 업데이트 되었습니다.");
-    }
-
-    private void FixedUpdate()
-    {
-        print("컴포넌트가 주기적으로 업데이트 되었습니다.");
-    }
-
-    private void LateUpdate()
-    {
-        print("업데이트 이후에 실행됩니다.")
+        print("공격함!");
     }
 }
