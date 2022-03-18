@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class AScript : MonoBehaviour
 {
-   public GameObject ObjectB;
+   private GameObject ObjectB;
 
    private void Start()
    {
+      ObjectB = GameObject.Find("B");
       print(ObjectB.name);
    }
 }
