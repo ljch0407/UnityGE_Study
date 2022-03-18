@@ -9,7 +9,7 @@ public class AScript : MonoBehaviour
 
    private void Start()
    {
-      ObjectB = GameObject.Find("B");
+      ObjectB = GameObject.FindObjectOfType<BScript>().gameObject;
       print(ObjectB.name);
    }
 }
