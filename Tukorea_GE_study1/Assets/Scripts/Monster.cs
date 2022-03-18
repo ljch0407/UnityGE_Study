@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monster : MonoBehaviour
+public abstract class Monster : MonoBehaviour//추상 클래스
 {
     private void Start()
     {
