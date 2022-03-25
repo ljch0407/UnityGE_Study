@@ -6,17 +6,11 @@ using Object = System.Object;
 
 public class AScript : MonoBehaviour
 {
-   private GameObject ObjectB;
-
-   private void Start()
-   {
-      ObjectB = new GameObject("B");
-      ObjectB.AddComponent<BScript>();
-      print(ObjectB.name);
-      
-      ObjectB.SendMessage("SayHello");
-
-   }
-   
-   
+    private void Start()
+    {
+        var C = transform.Find("B/C");
+        print(C.name);
+        
+        
+    }
 }
